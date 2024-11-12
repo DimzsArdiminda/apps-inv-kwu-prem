@@ -25,7 +25,28 @@
     <!-- Heading -->
     <div class="sidebar-heading">
         <i class="fas fa-fw fa-folder"></i>
-        Pages
+        Default
+    </div>
+
+    <li class="nav-item @yield('menuInvent')">
+        <a class="nav-link " href="{{ url('/dashboard/inventaris') }}">
+            <i class="fas fa-fw fa-box"></i>
+            <span>Inventaris</span></a>
+    </li>
+
+    <li class="nav-item @yield('menuInvoice')">
+        <a class="nav-link" href="{{ route('index.invoice') }}">
+            <i class="fas fa-fw fa-receipt"></i>
+            <span>Invoice</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        <i class="fas fa-fw fa-folder"></i>
+        Premium
     </div>
 
     <li class="nav-item @yield('menuInvent')">
@@ -37,13 +58,7 @@
     <li class="nav-item @yield('menuMasuk')">
         <a class="nav-link" href="{{ url('/dashboard/anggaran') }}">
             <i class="fas fa-fw fa-money-bill"></i>
-            <span>Anggaran</span></a>
-    </li>
-
-    <li class="nav-item @yield('menuInvoice')">
-        <a class="nav-link" href="{{ route('index.invoice') }}">
-            <i class="fas fa-fw fa-receipt"></i>
-            <span>Invoice</span></a>
+            <span>AI Brainstroming</span></a>
     </li>
 
     <!-- Divider -->
